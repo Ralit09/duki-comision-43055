@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+.contenedor-navbar{
+    width: 90%;
+    max-width:1280px;;
+    margin: auto;
+    padding-top: 20px;
+}
+header {
+    background-color: grey;
+    height: 10vh;
+}
+header .navbar{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+header .logo-navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar li a:hover{
+    color: blue;
+}
+nav ul {
+    display: flex;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+main .botones a{
+    background-color: red;
+    color: white;
+    padding: 20px 40px;
+    line-height: 50px;
+    text-decoration: none;
+}
+main .botones a:hover{
+    color: blue;
+}
+main .botones{
+    margin: 35px;
+    padding-left: 40px;
+    gap: 10px;
+}
+
+.fondo{
+    background: url(../assets/FondoDuki.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+main .titular{
+    color: #030303;
+    
+}
+main h1 {
+    font-size: 30px;
+    width: 42%;
+    padding-top: 120px;
+    padding-left: 70px;
+}
+
+footer{
+    background-color: grey;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0%;
+    height: 12vh;
+    padding: 2rem;
+}
+.Pie-de-Pagina{
+    color: white;
+    justify-content: flex-start;
+    padding-left: 100px;
+    }
+.redes-sociales a{
+    align-items: end;
+    justify-content: space-between;
+    padding-right: 30px;
+    }
+.Tour-Duki{
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    padding: 60px 0;
+    padding-left: 100px;
+}
+.contenedor-Tour-Duki{
+    background-color: yellow;
+    height: 60%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.contenedor-Tour-Duki img{
+    width: 60%;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.contenedor-Tour-Duki .texto{
+    width: 50%;
+    position: relative;
+    top: 50px;
+    right: 100px;
+}
+.contenedor-Tour-Duki .imagen{
+    width: 70%;
+}
+.contenedor-Tour-Duki h4{
+    font-size: 100px;
+    padding-left: 200px;
+
+}
+.lugar{
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fechas{
+    padding-top: 150px;
+}
+.fechas .numero{
+    font-size: 40px;
+}
+.fechas h5{
+    margin: 0;
+}
+.texto p{
+    padding-top: 40px;
+}
+.fechas h5{
+    font-size: 25px;
+}
+.numero{
+    position: relative;
+    left: 40px;
+}
+.fecha{
+    position: relative;
+    left: 11px;
+}
+.fechas a{
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    position: relative;
+    top: 17px;
+    right: 9px;
+    text-decoration: none;
+}
+.fechas a:hover{
+    color: blue;
+}
+
+
+.contenedor-info{
+    color: white;
+}
+.contenedor-info h1{
+    font-size: 60px;
+}
+.contenedor-info h2{
+    font-size: 40px;
+}
+
+
+.producto{
+    border: 1px solid red;
+    padding: 20px;
+    text-align: center;
+}
+.Tienda h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 48px;
+    width: 1900px;
+}
+.Tienda{
+    background-color: white;
+}
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.contacto{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../assets/dukifondo2.jpg);
+    background-size: cover;
+}
+.contacto .contenido-contacto{
+    max-width: 800px;
+    text-align: center;
+}
+.contacto .contenido-contacto h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+}
+.contacto .contenido-contacto p{
+    font-weight: 300;
+    color: white;
+}
+.contenido-contacto-dos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.contenido-contacto-dos .contacto-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contenido-contacto-dos .contacto-info .caja{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contenido-contacto-dos .contacto-info .caja .icono{
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contenido-contacto-dos .contacto-info .caja .texto-contactanos{
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    font-size: 300;
+}
+.contenido-contacto-dos .contacto-info .caja .texto-contactanos h3{
+    font-weight: 500;
+    color: skyblue;
+}
+.ContactoFormulario{
+    width: 40%;
+    padding: 40px;
+    background: white  ;
+}
+.ContactoFormulario h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.ContactoFormulario .Input-caja{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.ContactoFormulario .Input-caja input,.ContactoFormulario .Input-caja textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.ContactoFormulario .Input-caja span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.ContactoFormulario .Input-caja input:focus ~ span,
+.ContactoFormulario .Input-caja input:valid ~ span,
+.ContactoFormulario .Input-caja textarea:focus ~ span,
+.ContactoFormulario .Input-caja textarea:valid ~ span
+{
+    color:#e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.ContactoFormulario .Input-caja input [type="submit"]{
+    width: 10px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width:1024px){
+    .contacto{
+        padding: 50px;
+    }
+    .contenido-contacto{
+        flex-direction: column;
+    }
+    .contenido-contacto .contacto-info{
+        margin-bottom: 40px;
+    }
+    .contenido-contacto .contacto-info,
+    .ContactoFormulario
+    {width: 100%;}
+}
+
+.discografiaa{
+    background: url(../assets/fondocontacto.png);
+    background-size: cover;
+    color: white;
+    position: relative;
+    min-height: 100vh;
+}
+.contenedor-disco{
+    display: flex;
+    align-items: center;
+
+}
+.texto-disco h4{
+    color: yellow;
+    border: 1px solid #ccc;
+    width: 120px;
+    padding:10px;
+    border-radius: 10px;
+    font-size: 20px;
+    position: relative;
+    left:200px;
+    top: 100px;
+
+}
+.discografiaa h2{
+    font-size: 50px;
+    position: relative;
+    top: 150px;
+    left: 175px;
+}
+.discografiaa p{
+    font-size: 14px;
+    width: 400px;
+    line-height: 27px;
+    margin-bottom: 40px;
+    position: relative;
+    top: 200px;
+    left: 75px;
+}
+.Carousel-{
+    width: 700px;
+    height: 700px;
+    position: relative;
+    left: 1000px;
+    bottom: 400px;
+}
