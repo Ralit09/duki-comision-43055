@@ -1,0 +1,34 @@
+main{
+    .titular{
+    color:$color-fuentes;
+    }
+    h1{
+        font-size: 20px;
+        width: 42%;
+        padding-top: 120px;
+        padding-left: 70px;
+    }
+    .botones{
+        margin: 35px;
+        padding-left: 40px;
+        gap: 10px;
+        a{
+            background-color: red;
+            color: white;
+            padding: 20px 40px;
+            line-height: 50px;
+            text-decoration: none;
+            &:hover{
+                color: blue;
+            }
+        }
+    }
+}
+.fondo{
+    background: url(../assets/FondoDuki.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}

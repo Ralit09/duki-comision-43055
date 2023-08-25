@@ -1,0 +1,40 @@
+@media (max-width:320px){
+header .navbar{
+    flex-direction: column;
+
+}
+header .logo-navbar{
+    flex-direction:column;
+}
+header nav ul{
+    flex-direction: column;
+}
+header nav{
+    background: grey;
+    width: 100%;
+    position: absolute;
+}
+header nav ul li{
+    margin-bottom: 10px;
+}
+.titular h1{
+    font-size: 20px;
+    width:300px;
+}
+.botones{
+    padding: 10px;
+    gap: 10px;
+    margin: 10px;
+}
+footer .Pie-de-Pagina{
+    justify-content: start;
+    font-size: 20px;
+}
+footer{
+    font-size: 20px;
+    padding-left: 10px;
+}
+header{
+    font-size: 10px;
+}
+}

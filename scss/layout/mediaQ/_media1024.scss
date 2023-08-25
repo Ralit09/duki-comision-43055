@@ -1,0 +1,14 @@
+@media (max-width:1024px){
+    .contacto{
+        padding: 50px;
+    }
+    .contenido-contacto{
+        flex-direction: column;
+    }
+    .contenido-contacto .contacto-info{
+        margin-bottom: 40px;
+    }
+    .contenido-contacto .contacto-info,
+    .ContactoFormulario
+    {width: 100%;}
+}

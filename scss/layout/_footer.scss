@@ -1,0 +1,22 @@
+footer{
+    background-color: grey;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0%;
+    height: 12vh;
+    padding: 2rem;
+.Pie-de-Pagina{
+    color: white;
+    justify-content: flex-start;
+    padding-left: 100px;
+    }
+.redes-sociales{
+    a{
+        align-items: end;
+        justify-content: space-between;
+        padding-right: 30px;
+        }
+}
+}

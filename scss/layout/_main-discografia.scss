@@ -1,0 +1,47 @@
+.discografiaa{
+    background-color: $color-background;
+    background-size: cover;
+    color: white;
+    position: relative;
+    min-height: 100vh;
+    h2{
+        font-size: 50px;
+        position: relative;
+        top: 150px;
+        left: 175px;
+    }
+    p{
+        font-size: 16px;
+        width: 500px;
+        line-height: 27px;
+        margin-bottom: 40px;
+        position: relative;
+        top: 200px;
+        left: 75px;
+    }
+    .contenedor-disco{
+        display: flex;
+        align-items: center;
+        .texto-disco{
+            h4{
+                color: yellow;
+                border: 1px solid #ccc;
+                width: 120px;
+                padding:10px;
+                border-radius: 10px;
+                font-size: 20px;
+                position: relative;
+                left:200px;
+                top: 100px;
+            
+            }
+        }
+    }
+}
+.Carousel-{
+    width: 700px;
+    height: 700px;
+    position: relative;
+    left: 1000px;
+    bottom: 400px;
+}

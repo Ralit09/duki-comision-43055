@@ -1,0 +1,37 @@
+main{
+    .Tienda{
+        background-color: white;
+        h1{
+            text-align: center;
+            padding: 20px;
+            font-size: 48px;
+            width: 1900px;
+            color: $color-fuentes;
+        }
+        .producto{
+            border: 1px solid red;
+            padding: 20px;
+            text-align: center;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+.contenedor-info{
+    color: white;
+    h1{
+        font-size: 60px;
+        color: $color-fuentes;
+    }
+    h2{
+        font-size: 40px;
+        color: $color-fuentes;
+    }
+}
+.grid-container {
+    @include grid;
+}
