@@ -3,46 +3,21 @@
   padding: 0;
   box-sizing: border-box; }
 
-header {
-  background-color: grey;
-  height: 10vh; }
-  header .contenedor-navbar {
-    width: 90%;
-    max-width: 1280px;
-    margin: auto;
-    padding-top: 20px; }
-    header .contenedor-navbar .navbar {
-      display: flex;
-      flex-direction: none;
-      justify-content: center;
-      align-items: none;
-      gap: none;
-      padding-top: 20px; }
-      header .contenedor-navbar .navbar .logo-navbar {
-        display: flex;
-        align-items: center; }
-        header .contenedor-navbar .navbar .logo-navbar nav ul {
-          display: flex; }
-          header .contenedor-navbar .navbar .logo-navbar nav ul li {
-            margin: 0 20px; }
-            header .contenedor-navbar .navbar .logo-navbar nav ul li a {
-              color: white;
-              text-decoration: none; }
-              header .contenedor-navbar .navbar .logo-navbar nav ul li a:hover {
-                color: blue; }
+.nav-link a:hover {
+  text-decoration: underline; }
 
 main .titular {
   color: black; }
 
 main h1 {
   font-size: 20px;
-  width: 42%;
-  padding-top: 120px;
-  padding-left: 70px; }
+  width: 420px;
+  padding-top: 100px;
+  padding-left: 20px; }
 
 main .botones {
   margin: 35px;
-  padding-left: 40px;
+  padding-left: 10px;
   gap: 10px; }
   main .botones a {
     background-color: red;
@@ -61,13 +36,46 @@ main .botones {
   width: 100%;
   height: 100vh; }
 
+body {
+  font-family: "monteserrat",sans-serif;
+  min-height: 100vh;
+  background: skyblue; }
+
+.contenedor-error {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #343434; }
+  .contenedor-error h1 {
+    font-size: 160px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px; }
+  .contenedor-error a {
+    text-decoration: none;
+    background: #e55039aa;
+    color: #fff;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.4s; }
+
 main .Tienda {
-  background-color: white; }
+  background-color: white;
+  width: 100%;
+  height: 100%; }
   main .Tienda h1 {
     text-align: center;
     padding: 20px;
     font-size: 48px;
-    width: 1900px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     color: black; }
   main .Tienda .producto {
     border: 1px solid red;
@@ -77,18 +85,19 @@ main .Tienda {
       max-width: 100%;
       height: auto; }
 
-.contenedor-info {
+main .contenedor-info {
   color: white; }
-  .contenedor-info h1 {
+  main .contenedor-info h1 {
     font-size: 60px;
     color: black; }
-  .contenedor-info h2 {
+  main .contenedor-info h2 {
     font-size: 40px;
     color: black; }
 
-.grid-container {
+main .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 34rem));
+  justify-content: center;
   gap: 20px;
   padding: 20px; }
 
@@ -96,98 +105,97 @@ main .Tienda {
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  width: 100%;
-  height: 100vh;
-  padding: 60px 0;
-  padding-left: 100px; }
+  background-position: center center; }
   .Tour-Duki .contenedor-Tour-Duki, .Tour-Duki .contenedor-Tour-Duki-dos {
-    background-color: yellow;
-    height: 60%;
-    width: 90%;
     display: flex;
-    justify-content: space-around; }
+    justify-content: center;
+    align-items: center; }
     .Tour-Duki .contenedor-Tour-Duki .texto, .Tour-Duki .contenedor-Tour-Duki-dos .texto {
-      width: 50%;
-      position: relative;
-      top: 50px;
-      right: 100px; }
+      width: 70%;
+      height: 60%;
+      color: white;
+      padding: 100px; }
       .Tour-Duki .contenedor-Tour-Duki .texto h4, .Tour-Duki .contenedor-Tour-Duki-dos .texto h4 {
         font-size: 100px;
-        padding-left: 200px; }
-    .Tour-Duki .contenedor-Tour-Duki .imagen, .Tour-Duki .contenedor-Tour-Duki-dos .imagen {
-      width: 70%; }
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .Tour-Duki .contenedor-Tour-Duki .texto p, .Tour-Duki .contenedor-Tour-Duki-dos .texto p {
+        display: flex;
+        align-items: start;
+        font-size: 20px; }
     .Tour-Duki .contenedor-Tour-Duki img, .Tour-Duki .contenedor-Tour-Duki-dos img {
-      width: 60%;
-      padding-top: 10px;
-      padding-left: 20px; }
-    .Tour-Duki .contenedor-Tour-Duki .fechas, .Tour-Duki .contenedor-Tour-Duki-dos .fechas {
-      padding-top: 150px; }
-      .Tour-Duki .contenedor-Tour-Duki .fechas .lugar, .Tour-Duki .contenedor-Tour-Duki-dos .fechas .lugar {
+      width: 600px;
+      padding: 100px; }
+  .Tour-Duki a {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none; }
+    .Tour-Duki a:hover {
+      color: blue; }
+  .Tour-Duki .contenedor-Tour-Duki-dos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey; }
+    .Tour-Duki .contenedor-Tour-Duki-dos .fechas {
+      width: 30%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      border: 1px solid red;
+      padding: 20px;
+      text-align: center; }
+      .Tour-Duki .contenedor-Tour-Duki-dos .fechas .lugar {
+        width: 30%;
         font-size: 19px;
         display: flex;
-        justify-content: center;
-        align-items: center; }
-      .Tour-Duki .contenedor-Tour-Duki .fechas .numero, .Tour-Duki .contenedor-Tour-Duki-dos .fechas .numero {
+        justify-content: start;
+        align-items: start; }
+      .Tour-Duki .contenedor-Tour-Duki-dos .fechas .numero {
         font-size: 40px; }
-      .Tour-Duki .contenedor-Tour-Duki .fechas h5, .Tour-Duki .contenedor-Tour-Duki-dos .fechas h5 {
+      .Tour-Duki .contenedor-Tour-Duki-dos .fechas h5 {
         margin: 0;
         font-size: 25px; }
-      .Tour-Duki .contenedor-Tour-Duki .fechas p, .Tour-Duki .contenedor-Tour-Duki-dos .fechas p {
-        padding-top: 40px; }
-      .Tour-Duki .contenedor-Tour-Duki .fechas .fecha, .Tour-Duki .contenedor-Tour-Duki-dos .fechas .fecha {
-        position: relative;
-        left: 11px; }
-      .Tour-Duki .contenedor-Tour-Duki .fechas a, .Tour-Duki .contenedor-Tour-Duki-dos .fechas a {
-        background: white;
-        color: black;
-        padding: 10px 20px;
-        position: relative;
-        top: 17px;
-        right: 9px;
-        text-decoration: none; }
-        .Tour-Duki .contenedor-Tour-Duki .fechas a:hover, .Tour-Duki .contenedor-Tour-Duki-dos .fechas a:hover {
-          color: blue; }
+      .Tour-Duki .contenedor-Tour-Duki-dos .fechas .boton {
+        height: 100px;
+        padding-top: 10px; }
 
-.discografiaa {
+main {
   background-color: black;
   background-size: cover;
-  color: white;
-  position: relative;
-  min-height: 100vh; }
-  .discografiaa h2 {
-    font-size: 50px;
-    position: relative;
-    top: 150px;
-    left: 175px; }
-  .discografiaa p {
-    font-size: 16px;
-    width: 500px;
-    line-height: 27px;
-    margin-bottom: 40px;
-    position: relative;
-    top: 200px;
-    left: 75px; }
-  .discografiaa .contenedor-disco {
-    display: flex;
-    align-items: center; }
-    .discografiaa .contenedor-disco .texto-disco h4 {
-      color: yellow;
-      border: 1px solid #ccc;
-      width: 120px;
-      padding: 10px;
-      border-radius: 10px;
-      font-size: 20px;
-      position: relative;
-      left: 200px;
-      top: 100px; }
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  main .discografiaa {
+    width: 600px; }
+    main .discografiaa .texto-disco {
+      display: flex;
+      flex-flow: column;
+      width: 600px;
+      padding: 100px; }
+    main .discografiaa h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      width: 600px;
+      height: 260px;
+      padding: 50px;
+      color: white; }
+    main .discografiaa p {
+      width: 700px;
+      height: 400px;
+      padding: 50px;
+      color: white;
+      font-size: 20px; }
 
 .Carousel- {
-  width: 700px;
-  height: 700px;
-  position: relative;
-  left: 1000px;
-  bottom: 400px; }
+  width: 1100px;
+  height: 1100px;
+  padding: 300px; }
 
 .contacto {
   position: relative;
@@ -289,22 +297,37 @@ main .Tienda {
   transform: translateY(-20px); }
 
 footer {
-  background-color: grey;
-  position: relative;
+  width: 100%;
+  height: 100px;
+  background: #165dc7;
+  min-height: 100px;
+  padding: 20px 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  bottom: 0%;
-  height: 12vh;
-  padding: 2rem; }
-  footer .Pie-de-Pagina {
-    color: white;
-    justify-content: flex-start;
-    padding-left: 100px; }
-  footer .redes-sociales a {
-    align-items: end;
-    justify-content: space-between;
-    padding-right: 30px; }
+  flex-direction: column; }
+  footer .social-icon {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap; }
+    footer .social-icon li {
+      list-style: none; }
+      footer .social-icon li a img {
+        font-size: 2em;
+        color: white;
+        margin: 0 10px;
+        transition: 0,5s; }
+        footer .social-icon li a img:hover {
+          transform: translateY(-10px); }
+  footer .footer-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap; }
+    footer .footer-texto h2 {
+      font-size: 20px; }
 
 @media (max-width: 1024px) {
   .contacto {
@@ -321,44 +344,73 @@ footer {
   main .titular h1 {
     font-size: 20px;
     width: 200px; }
-  footer .redes-sociales {
-    align-items: end;
-    justify-content: space-between;
-    width: 200px;
-    height: 200px;
-    padding: 10px; }
   .grid-container {
     grid-template-columns: repeat(2, 1fr); }
   main .Tour-Duki h5 {
     width: 50px; }
   main .Tour-Duki p {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .checkbtn {
+    display: block; }
+  main .Tienda h1 {
+    font-size: 30px; }
+  .Tour-Duki .contenedor-Tour-duki .texto p {
+    font-size: 10px;
+    height: 60%; }
+  .Tour-Duki .contenedor-Tour-duki h4 {
+    font-size: 20px;
+    width: 100px;
+    height: 100px; } }
 
 @media (max-width: 320px) {
-  header .navbar {
-    flex-direction: column; }
-  header .logo-navbar {
-    flex-direction: column; }
-  header nav ul {
-    flex-direction: column; }
-  header nav {
-    background: grey;
+  .grid-container {
     width: 100%;
-    position: absolute; }
-  header nav ul li {
-    margin-bottom: 10px; }
-  .titular h1 {
-    font-size: 20px;
-    width: 300px; }
-  .botones {
-    padding: 10px;
-    gap: 10px;
-    margin: 10px; }
-  footer .Pie-de-Pagina {
-    justify-content: start;
-    font-size: 20px; }
-  footer {
-    font-size: 20px;
-    padding-left: 10px; }
-  header {
-    font-size: 10px; } }
+    justify-content: center; }
+    .grid-container .Producto {
+      padding: 10px; }
+  .Tour-Duki .contenedor-Tour-Duki .imagen, .Tour-Duki .contenedor-Tour-Duki-dos .imagen {
+    display: none; }
+  .Tour-Duki .contenedor-Tour-Duki .texto, .Tour-Duki .contenedor-Tour-Duki-dos .texto {
+    width: 1150px; }
+    .Tour-Duki .contenedor-Tour-Duki .texto p, .Tour-Duki .contenedor-Tour-Duki-dos .texto p {
+      font-size: 10px;
+      align-items: start;
+      justify-self: start;
+      justify-content: start; }
+    .Tour-Duki .contenedor-Tour-Duki .texto h4, .Tour-Duki .contenedor-Tour-Duki-dos .texto h4 {
+      align-items: start;
+      justify-content: start;
+      justify-self: start; }
+  .Tour-Duki .contenedor-Tour-Duki-dos .fechas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center; } }
+
+main h1 {
+  font-size: 15px; }
+
+.discografiaa .texto-disco h2 {
+  text-align: start;
+  padding: 20px;
+  font-size: 48px;
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: start; }
+
+.discografiaa .texto-disco p {
+  display: flex;
+  font-size: 12px;
+  text-align: start;
+  padding: 50px;
+  width: 100%;
+  justify-content: start;
+  align-items: start; }
+
+.redes-sociales {
+  display: flex;
+  justify-content: start;
+  align-items: start; }
+
+main .Tienda h1 {
+  font-size: 20px; }

@@ -1,40 +1,83 @@
 @media (max-width:320px){
-header .navbar{
-    flex-direction: column;
+.grid-container{
+    width: 100%;
+    justify-content: center;
+    .Producto{
+        padding: 10px;
+    }
+}
+    .Tour-Duki{
+        .contenedor-Tour-Duki{
+            .imagen{
+                display: none;
+            }
+            .texto{
+                width: 1150px;
+                p{
+                    font-size: 10px;
+                    align-items: start;
+                    justify-self: start;
+                    justify-content: start;
+                }
+                h4{
+                    align-items: start;
+                    justify-content: start;
+                    justify-self: start;
+                }
+            }
+        }
+        .contenedor-Tour-Duki-dos{
+            .fechas{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+                justify-content: center;
+            }
+        }
+    }
+    
 
 }
-header .logo-navbar{
-    flex-direction:column;
+main{
+    h1{
+        font-size: 15px;
+    }
 }
-header nav ul{
-    flex-direction: column;
-}
-header nav{
-    background: grey;
+.discografiaa{
+    .texto-disco{
+        h2{
+            text-align: start;
+            padding: 20px;
+            font-size: 48px;
+            display: flex;
+            width: 100%;
+            justify-content: start;
+            align-items: start;
+        }
+        p{
+            display: flex;
+            font-size: 12px;
+            text-align: start;
+    padding: 50px;
     width: 100%;
-    position: absolute;
-}
-header nav ul li{
-    margin-bottom: 10px;
-}
-.titular h1{
-    font-size: 20px;
-    width:300px;
-}
-.botones{
-    padding: 10px;
-    gap: 10px;
-    margin: 10px;
-}
-footer .Pie-de-Pagina{
     justify-content: start;
-    font-size: 20px;
+    align-items: start;
+        }  
+    }
 }
-footer{
-    font-size: 20px;
-    padding-left: 10px;
-}
-header{
-    font-size: 10px;
-}
-}
+    .redes-sociales{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    
+        
+    }
+    main{
+        .Tienda{
+          h1{
+            font-size: 20px;
+          }
+        }
+      }
+
+
+

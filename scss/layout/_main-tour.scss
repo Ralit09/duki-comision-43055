@@ -3,72 +3,75 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 100%;
-    height: 100vh;
-    padding: 60px 0;
-    padding-left: 100px;
     .contenedor-Tour-Duki{
-        background-color: yellow;
-        height: 60%;
-        width: 90%;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
         .texto{
-            width: 50%;
-            position: relative;
-            top: 50px;
-            right: 100px;
+            width: 70%;
+            height: 60%;
+            color: white;
+            padding: 100px;
             h4{
                 font-size: 100px;
-                padding-left: 200px;
-            
-            }
-        }
-        .imagen{
-            width: 70%;
-        }
-        img{
-            width: 60%;
-            padding-top: 10px;
-            padding-left: 20px;
-        }
-        .fechas{
-            padding-top: 150px;
-            .lugar{
-                font-size: 19px;
                 display: flex;
-                justify-content: center;
                 align-items: center;
-            }
-            .numero{
-                font-size: 40px;
-            }
-            h5{
-                margin: 0;
-                font-size: 25px;
+                justify-content: center;
             }
             p{
-                padding-top: 40px;
+                display: flex;
+                align-items: start;
+                font-size: 20px;
             }
-            .fecha{
-                position: relative;
-                left: 11px;
+        }
+        img{
+            width: 600px;
+            padding: 100px;
+        }
+
                 }
                 a{
                     background: white;
                     color: black;
                     padding: 10px 20px;
-                    position: relative;
-                    top: 17px;
-                    right: 9px;
                     text-decoration: none;
                     &:hover{
                         color: blue
                     }
                 }
+                .contenedor-Tour-Duki-dos{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: grey;
+                    .fechas{
+                        width: 30%;
+                        display: grid;
+                        grid-template-columns: repeat(3,1fr);
+                        justify-content: center;
+                        border: 1px solid red;
+                        padding: 20px;
+                        text-align: center;
+                        .lugar{
+                            width: 30%;
+                            font-size: 19px;
+                            display: flex;
+                            justify-content: start;
+                            align-items: start;
+                        }
+                        .numero{
+                            font-size: 40px;
+                        }
+                        h5{
+                            margin: 0;
+                            font-size: 25px;
+                        }
+                        .boton{
+                            height: 100px;
+                            padding-top: 10px;
+                        }
+                }}
                 }
-    }
-}
 .contenedor-Tour-Duki-dos{
     @extend .contenedor-Tour-Duki
 }

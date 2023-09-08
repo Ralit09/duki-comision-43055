@@ -3,20 +3,42 @@
         font-size: 20px;
         width: 200px;
     }
-    footer .redes-sociales{
-        align-items: end;
-        justify-content: space-between;
-        width: 200px;
-        height: 200px;
-        padding: 10px;
-    }
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
-}
-main .Tour-Duki h5{
+  }
+  main .Tour-Duki h5{
     width: 50px;
-}
-main .Tour-Duki p{
+  }
+  main .Tour-Duki p{
     font-size: 10px;
+  }
+.checkbtn{
+  display: block;
 }
+main{
+  .Tienda{
+    h1{
+      font-size: 30px;
+    }
+  }
+}
+.Tour-Duki{
+  .contenedor-Tour-duki{
+  .texto{
+    p{
+      font-size: 10px;
+      height: 60%;
+    }
+  }
+}
+}
+.Tour-Duki{
+  .contenedor-Tour-duki{
+    h4{
+      font-size: 20px;
+      width: 100px;
+      height: 100px;
+    }
+    }
+  }
 }
